@@ -31,3 +31,7 @@ const markup =
         </ul>
     </section>
 </main>
+
+root.render(
+    markup
+)
