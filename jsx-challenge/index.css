@@ -1,0 +1,17 @@
+/* Copied style from first react code */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #27292c;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+}
