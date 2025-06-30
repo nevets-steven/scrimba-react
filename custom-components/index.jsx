@@ -11,6 +11,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
  * the Page component where the `header` used to be.
  */
 
+
+/** Challenge: 
+ * Move the `main` (section) element into its own component called "MainContent" 
+ * and render that component inside the Page component.
+ * 
+ * Do the same with the `footer` element, moving it into a new
+ * component called "Footer"
+*/
+
+
 function Header(){
     return (
         <React.Fragment>
@@ -21,20 +31,39 @@ function Header(){
         </React.Fragment>
     )
 }
+
+function MainContent() {
+    return(
+        <React.Fragment>
+        <section id="ordered-list">
+            <ol className="list">
+                <li className="list-item">I love learning</li>
+                <li className="list-item">React is in demand</li>
+                <li className="list-item">I find this fun</li>
+            </ol>
+        </section>
+        </React.Fragment>
+    )
+}
+
+function Footer(){
+    return (
+        <React.Fragment>
+            <footer id="footer">
+                <p>© 2025 Frederick development. All rights reserved.</p>
+            </footer>
+        </React.Fragment>
+
+    )
+}
 function Page() {
     return (
         <React.Fragment>
             <Header />
-            <section id="ordered-list">
-                <ol className="list">
-                    <li className="list-item">I love learning</li>
-                    <li className="list-item">React is in demand</li>
-                    <li className="list-item">I find this fun</li>
-                </ol>
-            </section>
-            <footer id="footer">
-                <p>© 2025 Frederick development. All rights reserved.</p>
-            </footer>
+            <MainContent />
+            <Footer />
+            
+            
         </React.Fragment>
     )
 }
