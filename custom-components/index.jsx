@@ -2,14 +2,29 @@
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
+/** Mini Challenge:
+ * 
+ * Move the `header` element from the Page component into 
+ * its own component called "Header"
+ * 
+ * Then render an instance of the Header component inside
+ * the Page component where the `header` used to be.
+ */
 
-function Page() {
+function Header(){
     return (
         <React.Fragment>
             <header id="header">
                 <img src="react-logo.png" alt="React Logo" width='40px'/>
                 <h1 className="heading">Reasons I'm excited to learn React</h1>
             </header>
+        </React.Fragment>
+    )
+}
+function Page() {
+    return (
+        <React.Fragment>
+            <Header />
             <section id="ordered-list">
                 <ol className="list">
                     <li className="list-item">I love learning</li>
