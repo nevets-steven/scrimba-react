@@ -54,6 +54,9 @@ function Page() {
                     <li className="list-item">I find this fun</li>
                 </ol>
             </section>
+            <footer id="footer">
+                <p>© 2025 Frederick development. All rights reserved.</p>
+            </footer>
         </main>
         
     )
