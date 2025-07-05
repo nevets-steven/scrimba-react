@@ -21,12 +21,25 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 */
 
 
+/**
+ * Challenge:
+ * 
+ * - Add a `nav` > `ul` > `li` (x3). The 3 items should say:
+ *   "Pricing", "About", and "Contact"
+ */
+
 function Header(){
     return (
         <React.Fragment>
             <header id="header">
                 <img src="react-logo.png" alt="React Logo" width='40px'/>
-                <h1 className="heading">Reasons I'm excited to learn React</h1>
+                <nav className="nav">
+                    <ul>
+                        <li>Pricing</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
             </header>
         </React.Fragment>
     )
@@ -36,6 +49,7 @@ function MainContent() {
     return(
         <React.Fragment>
         <section id="ordered-list">
+            <h1 className="heading">Reasons I'm excited to learn React</h1>
             <ol className="list">
                 <li className="list-item">I love learning</li>
                 <li className="list-item">React is in demand</li>
