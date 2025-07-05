@@ -28,13 +28,32 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
  *   "Pricing", "About", and "Contact"
  */
 
+
+//  * Challenge:
+//  * 
+//  * Using flexbox, line up the `li`s horizontally and put them inline
+//  * with the React logo.
+//  * 
+//  * NOTE: for practice's sake, don't select any
+//  * elements, but use classes for all styling.
+//  */
+
+
+/**
+ * Challenge:
+ * 
+ * Move the `width` style off the JSX and into CSS with a dedicated
+ * className on the img element, and change the width to 55px instead
+ */
+
+
 function Header(){
     return (
         <React.Fragment>
             <header id="header">
-                <img src="react-logo.png" alt="React Logo" width='40px'/>
+                <img src="react-logo.png" alt="React Logo" id="logo"/>
                 <nav className="nav">
-                    <ul>
+                    <ul className="nav-list"> 
                         <li>Pricing</li>
                         <li>About</li>
                         <li>Contact</li>
