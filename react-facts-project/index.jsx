@@ -1,4 +1,4 @@
-import {createRoot} from 'react-dom/client'
+// import {createRoot} from 'react-dom/client'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -23,6 +23,5 @@ Challenge: Project setup
   works if you haven't done it before.
 */
 
-
-root.render()
+root.render(<App />)
 
