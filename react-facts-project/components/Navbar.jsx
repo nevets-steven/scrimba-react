@@ -14,8 +14,8 @@
 
 function Navbar() {
     return (
-        <header>
-            <nav>
+        <header id='header'>
+            <nav className="nav">
                 <img src="./react-logo.png" alt="React Logo" id="logo"/>
                 <span>React Facts</span>
             </nav>
