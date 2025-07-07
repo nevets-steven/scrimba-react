@@ -43,8 +43,13 @@ h1 {
 .facts-list{
     margin-top: 46px;
     max-width: 400px;
+
 }
 .list-item{
     padding-block: 10px;
     line-height: 19px;
+}
+.facts-list-item::marker{
+    color: #61DAFB;
+    font-size: 1.5rem;
 }
