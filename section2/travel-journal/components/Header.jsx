@@ -5,7 +5,7 @@
 function Header(){
     return(
         <header id="header">
-            <img src="./Globe.png" alt="Globe" />
+            <img src="./images/Globe.png" alt="Globe" />
             <h1>My Travel Journal</h1>
         </header>
     )
